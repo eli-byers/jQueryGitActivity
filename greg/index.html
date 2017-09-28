@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Street Fighter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+            $('.thing').click(()=>{
+                $('.thing').hide();
+            });
+            $('.thing').click(()=>{
+                $('select').show();
+            });
+            
+            $(".select1").change(function() {
+                $("#left").css("background-image", "url('" + $(this).val() + "')");
+            
+            });
+            $(".select2").change(function() {
+                $("#right").css("background-image", "url('" + $(this).val() + "')");
+            
+            });
+            
+            $('.thing').click(()=>{
+                $('h1').text("SELECT FIGHTER");
+            });
+            $('#beach').hover(()=>{
+                var alt = 'url(pics/beach.jpg)';
+                $('#wrapper').css('background-image', alt);
+                console.log(alt);
+
+            });
+            $('#planet').hover(()=>{
+                var alt = 'url(pics/earth.jpg)';
+                $('#wrapper').css('background-image', alt);
+                console.log(alt);
+
+            });
+            $('#dojo').hover(()=>{
+                var alt = 'url(pics/dojo.jpg)';
+                $('#wrapper').css('background-image', alt);
+                console.log(alt);
+
+            });
+            $('#forest').hover(()=>{
+                var alt = 'url(pics/forest.jpg)';
+                $('#wrapper').css('background-image', alt);
+                console.log(alt);
+
+            });
+            $('#matrix').hover(()=>{
+                var alt = 'url(pics/matrix.jpg)';
+                $('#wrapper').css('background-image', alt);
+                console.log(alt);
+
+            });
+            $('#snow').hover(()=>{
+                var alt = 'url(pics/snow.jpg)';
+                $('#wrapper').css('background-image', alt);
+                console.log(alt);
+
+            });
+            
+
+        });
+    </script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu">
+            <h1>SELECT ARENA</h1>
+            <div id='beach' class="thing" >
+                <p>beach</p>
+            </div>
+            <div id="planet" class="thing">
+                <p>planet</p>
+            </div>
+            <div id='dojo' class="thing" >
+                <p>dojo</p>
+            </div>
+            <div id='forest' class="thing" >
+                <p>forest</p>
+            </div>
+            <div id="matrix" class="thing">
+                <p>matrix</p>
+            </div>
+            <div id="snow" class="thing" >
+                <p>snow</p>
+            </div>
+            <select class="select1"> 
+                <option value="Select Beatle">Select ninja</option>
+                <option value="pics/mikey.png">Ringo</option>
+                <option value="pics/raphael.png">John</option>
+                <option value="pics/donny.png">Paul</option>
+                <option value="pics/leo.png">George</option>
+            </select>
+            <select class="select2">
+                <option value="Select Beatle">Select ninja</option>
+                <option value="pics/mikey.png" >Ringo</option>
+                <option value="pics/raphael.png" >John</option>
+                <option value="pics/donny.png" >Paul</option>
+                <option value="pics/leo.png" >George</option>
+            </select>
+
+        </div>
+        <div id="bottom">
+            <div id='left' class="sub">
+            </div>
+            <div id='right' class="sub">
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
