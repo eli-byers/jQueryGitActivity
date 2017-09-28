@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+.menu{
+    width: 300px;
+    height: 150px;
+    margin: 50px auto;
+    color: gold;
+    background-color: grey;
+    padding: 30px;
+}
+.left {
+    display: inline-block;
+    margin: 40px 200px;
+    text-align: left;
+}
+.right {
+    display: inline-block;
+    margin: 40px 200px;
+    text-align: right;
+}
