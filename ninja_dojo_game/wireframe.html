@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+
+function attachhandlers() {
+    $('option').change(function(){
+        alert("jquellan");
+    });
+}
+$(document).ready(function(){
+    $("#button1").hover(function(){
+        $(".wrapper").css("background-image", "url(beach.jpg)");
+    });
+    console.log("issomethinghappening");
+    $("#button2").hover(function(){
+        $(".wrapper").css("background-image", "url(earth.jpg)");
+    });
+    $("#button3").hover(function(){
+        $(".wrapper").css("background-image", "url(dojo.jpg)");
+    });
+    $("#button4").hover(function(){
+        $(".wrapper").css("background-image", "url(forest.jpg)");
+    });
+    $("#button5").hover(function(){
+        $(".wrapper").css("background-image", "url(matrix.jpg)");
+    });
+    $("#button6").hover(function(){
+        $(".wrapper").css("background-image", "url(snow.jpg)");
+    });
+
+    // $("#button1").click(function(){
+    //     $(".arena").html('<p id="orangetext">Select Player</p><select id="select1"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select><select id="select2"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select>');
+    // });
+    // $("#button2").click(function(){
+    //     $(".arena").html('<p id="orangetext">Select Player</p><select id="select1"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select><select id="select2"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select>');
+    // });
+    // $("#button3").click(function(){
+    //     $(".arena").html('<p id="orangetext">Select Player</p><select id="select1"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select><select id="select2"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select>');
+    // });
+    // $("#button4").click(function(){
+    //     $(".arena").html('<p id="orangetext">Select Player</p><select id="select1"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select><select id="select2"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select>');
+
+    // });
+    // $("#button5").click(function(){
+    //     $(".arena").html('<p id="orangetext">Select Player</p><select id="select1"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select><select id="select2"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select>');
+    // });
+    // $("#button6").click(function(){
+    //     $(".arena").html('<p id="orangetext">Select Player</p><select id="select1"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select><select id="select2"><option value="mikey.png">Mikey</option><option value="raphael.png">Raphael</option><option value="donny.png">Donny</option><option value="leo.png">Leo</option></select>');
+    //     $(document).on('change','#select1','select1');
+    //     attachhandlers();
+    // });
+    //$('hidden').hide();
+    $('#select1').change(function(){
+        console.log($(this).val());
+
+        $("#left").css("background-image", "url('" + $(this).val() + "')"); 
+    });
+
+    $('#select2').change(function(){
+        console.log($(this).val());
+
+        $("#right").css("background-image", "url('" + $(this).val() + "')"); 
+    });
+    $('button').click(()=>{
+        $('button').hide();
+        $('#orangetext').hide();
+        $('#hidden').show();
+    });
+});
+</script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="arena">
+        <p id="orangetext">Select Arena</p>
+        <div id="toprow">
+            <img id="beach" src="beach.jpg" style="display:none" alt="beach">
+            <button id="button1"><a></a>beach</button>
+            <img id="planet" src="earth.jpg" style="display:none" alt="beach">
+            <button id="button2">planet</button>
+            <img id="dojo "src="dojo.jpg" style="display:none" alt="beach">
+            <button id="button3">dojo</button>
+            <div id="hidden">
+                    <p id="urmom">Select Player</p>
+                    <select id="select1">
+                        <option value="mikey.png">Mikey</option>
+                        <option value="raphael.png">Raphael</option>
+                        <option value="donny.png">Donny</option>
+                        <option value="leo.png">Leo</option>
+                    </select>
+                    <select id="select2">
+                        <option value="mikey.png">Mikey</option>
+                        <option value="raphael.png">Raphael</option>
+                        <option value="donny.png">Donny</option>
+                        <option value="leo.png">Leo</option>
+                    </select>
+            </div>
+        </div>
+        <div id="bottomrow">
+            <img id="forest" src="forest.jpg" style="display:none" alt="beach">
+            <button id="button4">forest</button>
+            <img id="matrix" src="matrix.jpg" style="display:none" alt="beach">
+            <button id="button5">matrix</button>
+            <img id="snow" src="snow.jpg" style="display:none" alt="beach">
+            <button id="button6">snow</button>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+    <!--<img id="left" src="" alt="">
+    <img id="right" src="" alt=""> -->
+</img>
+</body>
+</html>
