@@ -1,0 +1,158 @@
+*{
+    height: auto;
+    width: auto;
+    }
+    body, h1, h2, h3, h4, h5 ,h6{
+    margin: 0px;
+    padding: 0px;
+    }
+    .wrapper{
+    height: 1000px;
+    width: 10000px;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    border: solid;
+    border-color: gray;
+
+    }
+    .arena{
+    height: 120px;
+    width: 240px;
+    background-color:gray;
+    border:solid;
+    border-color: darkgrey;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    text-align:center;
+    left: 400px;
+    top: 200px;
+    }
+#orangetext{
+height: 20px;
+width: 200px;
+color: orange;
+text-shadow: 2px 2px white;
+position: relative;
+font-size: 18px;
+text-align:center;
+}
+#toprow{
+height: 20px;
+width: 200px;
+position: relative;
+display: inline-block;
+text-align:center;
+}
+#bottomrow{
+height: 20px;
+width: 200px;
+position: relative;
+display: inline-block;
+text-align:center;
+}
+#button1{
+    height: 20px;
+    width: 50px;
+    background-color:white;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+#button2{
+    height: 20px;
+    width: 50px;
+    background-color:white;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+#button3{
+    height: 20px;
+    width: 50px;
+    background-color:white;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+#button4{
+    height: 20px;
+    width: 50px;
+    background-color:white;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+#button5{
+    height: 20px;
+    width: 50px;
+    background-color:white;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+#hidden{
+    display:none;
+}
+#button6{
+    height: 20px;
+    width: 50px;
+    background-color:white;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+#left{
+height: 300px;
+width: 300px;
+display: inline-block;
+position: relative;
+top: 300px;
+}
+#right{
+height: 300px;
+width: 300px;
+display: inline-block;
+position: relative;
+top: 300px;
+}
+#mikey{
+position: relative;
+display: inline-block;
+}
+#raphael{
+position: relative;
+display: inline-block;
+}
+#donny{
+position: relative;
+display: inline-block;
+}
+#leo{
+position: relative;
+display: inline-block;
+}
+select{
+position: relative;
+display: inline-block;
+}
+#bottom{
+    height: 500px;
+}
+#left{
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    background-size: cover;
+    padding: 100px;
+}
+#right{
+    
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    background-size: cover;
+    padding: 100px;
+    
+}
